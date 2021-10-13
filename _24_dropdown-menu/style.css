@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar{
+    background-color: cadetblue;
+    padding: 5px 10px;
+    text-align: center;
+}
+.nav-bar a{
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 19px;
+}
+.dropdown-container{
+    display: inline;
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: cornflowerblue;
+    text-align: left;
+    min-width: 100px;
+    display: none;
+}
+.dropdown-content a{
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: darkgray;
+    color: black;
+}
+.dropdown-container:hover .dropdown-content{
+    display: block;
+}

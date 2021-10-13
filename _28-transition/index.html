@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        	.main{
+                width: 300px;
+                height: 300px;
+                background-color: red;
+                color: white;
+                margin: 0 auto;
+                margin-top:100px ;
+                /* transition-property: width;
+                transition-duration: 1s;
+                transition-delay: .5s;
+                transition-timing-function: linear;
+                */
+                transition:width 2s,height 3s, transform 3s;
+            }
+            .main h2{
+                font-size: 2.4rem;
+                color: white;
+              transition-property: font-size 2s;
+            }
+            .main h2:hover{
+                font-size: 3rem;
+            }
+            .main:hover{
+                width: 400px;
+                height: 400px;
+                transform:rotate(270deg) ;
+                
+            }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>Bangladsh</h2>
+    </div>
+</body>
+</html>
